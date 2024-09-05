@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  height: 100px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-left: 420px;
+  margin-top: 175px;
+}
+.card .imagem {
+  width: 300px;
+  height: 450px;
+}
+.card .imagem img {
+  width: 300px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.card .container .categoria {
+  text-transform: uppercase;
+  color: #1B2127;
+  letter-spacing: 5.5px;
+  font-size: 12px;
+  padding-top: 19.5px;
+}
+.card .container h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 31.5px;
+  max-width: 200px;
+  margin: 0px;
+  padding-top: 9.5px;
+  line-height: 32px;
+  margin-left: 4px;
+}
+.card .container .descricao {
+  color: #1B2127;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 23.5px;
+  line-height: 23px;
+  margin: 0px;
+}
+.card .container .preco {
+  display: flex;
+  align-items: center;
+  padding-top: 24.5px;
+  padding-bottom: 25.5px;
+}
+.card .container .preco .preco1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 33px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 15px;
+}
+.card .container .preco .preco2 {
+  text-decoration: line-through;
+  color: #1B2127;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.card .container .add-to-cart {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 14.1px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700px;
+  font-size: 14px;
+  max-width: 235px;
+  max-height: 45;
+  border-top: 21.5px;
+}
+.card .container .add-to-cart:hover {
+  background-color: #2c5e4b;
+}
+.card .container .add-to-cart .imgcarrinho {
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */

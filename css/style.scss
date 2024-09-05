@@ -1,0 +1,122 @@
+$primary-color: hsl(158, 36%, 37%);
+$secondary-color: #1B2127;
+$background-color: hsl(30, 38%, 92%);
+$text-color-dark: hsl(212, 21%, 14%);
+$white-color: hsl(0, 0%, 100%);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Fraunces', serif;
+
+body {
+  background-color: $background-color;
+  font-family: $font-family-primary;
+  display: flex;
+  height: 100px;
+}
+
+.card {
+  background-color: $white-color;
+  display: flex;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-left: 420px;
+  margin-top: 175px;
+
+  .imagem {
+    width: 300px;
+    height: 450px;
+    img {
+      width: 300px;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    .categoria {
+      text-transform: uppercase;
+      color: $secondary-color;
+      letter-spacing: 5.5px;
+      font-size: 12px;
+      padding-top: 19.5px;
+    }
+
+    h1 {
+      font-family: $font-family-secondary;
+      font-weight: 700;
+      font-size: 31.5px;
+      max-width: 200px;
+      margin: 0px;
+      padding-top: 9.5px;
+      line-height: 32px;
+      margin-left: 4px;
+    }
+
+    .descricao {
+      color: $secondary-color;
+      font-size: 14px;
+      line-height: 1.5;
+      padding-top: 23.5px;
+      line-height: 23px;
+      margin: 0px;
+    }
+
+    .preco {
+      display: flex;
+      align-items: center;
+      padding-top: 24.5px;
+      padding-bottom: 25.5px;
+
+      .preco1 {
+        font-family: $font-family-secondary;
+        font-weight: 700;
+        font-size: 33px;
+        color: $primary-color;
+        margin-right: 15px;
+      }
+
+      .preco2 {
+        text-decoration: line-through;
+        color: $secondary-color;
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+
+    .add-to-cart {
+      background-color: $primary-color;
+      color: $white-color;
+      border: none;
+      padding: 14.1px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: $font-family-primary;
+      font-weight: 700px;
+      font-size: 14px;
+      max-width: 235px;
+      max-height: 45;
+      border-top: 21.5px;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+
+      .imgcarrinho {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -10,5 +10,5 @@
         }
     ],
     "liveSassCompile.settings.showOutputWindowOn": "Warning",
-    "liveServer.settings.CustomBrowser": "chrome"
+    "liveServer.settings.CustomBrowser": "microsoft-edge"
 }
